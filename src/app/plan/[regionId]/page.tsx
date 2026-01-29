@@ -134,14 +134,11 @@ export default function PlanPage() {
 
         try {
             const params = new URLSearchParams({
-                action: 'searchCategory',
-                category: 'FD6',
-                x: String(region.lng),
-                y: String(region.lat),
-                radius: '20000',
+                action: 'searchKeyword',
+                query: `${region.name} 맛집`,
                 size: '15', // 한 번에 15개씩
                 page: String(page),
-                sort: 'accuracy' // 항상 인기순(정확도순)
+                sort: 'accuracy' // 정확도순 (인기도 반영)
             });
 
             const response = await fetch(`/api/places?${params.toString()}`);

@@ -1,141 +1,488 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
+/* ============================================
+   Home Page Styles
+   ============================================ */
 
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
+.container {
   min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
 }
 
+/* Hero Section */
+.hero {
+  background: var(--bg-gradient);
+  padding: var(--space-20) var(--space-4);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.titleHighlight {
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-inverse);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.02em;
+}
+
+.titleSub {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+/* Main Content */
 .main {
-  display: flex;
-  min-height: 100vh;
+  flex: 1;
+  padding: var(--space-12) var(--space-4);
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
+}
+
+/* Search Section */
+.searchSection {
+  margin-bottom: var(--space-12);
+}
+
+.searchBox {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.searchInput {
+  width: 100%;
+  padding: var(--space-4) var(--space-12) var(--space-4) var(--space-5);
+  font-size: var(--font-size-lg);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-full);
+  background: var(--bg-primary);
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: var(--shadow-lg), 0 0 0 4px var(--primary-100);
+}
+
+.searchInput::placeholder {
+  color: var(--text-tertiary);
+}
+
+.searchIcon {
+  position: absolute;
+  right: var(--space-5);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  color: var(--text-tertiary);
+  pointer-events: none;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + var(--space-2));
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  z-index: var(--z-dropdown);
+  list-style: none;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.suggestionItem {
+  display: flex;
   justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+  align-items: center;
+  padding: var(--space-3) var(--space-5);
+  cursor: pointer;
+  transition: background var(--transition-fast);
 }
 
-.intro {
+.suggestionItem:hover {
+  background: var(--gray-50);
+}
+
+.suggestionName {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+.suggestionProvince {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+}
+
+/* Roulette Section */
+.rouletteSection {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
-}
-
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
-}
-
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
-}
-
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.ctas a {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+.rouletteWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roulette {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-full);
+  background: conic-gradient(from 0deg,
+      #667eea,
+      #764ba2,
+      #f093fb,
+      #f5576c,
+      #4facfe,
+      #00f2fe,
+      #667eea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-2xl), 0 0 60px rgba(102, 126, 234, 0.3);
+  transition: transform 3s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+}
+
+.roulette.spinning {
+  animation: none;
+}
+
+.rouletteInner {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-full);
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rouletteIcon {
+  font-size: 48px;
+  line-height: 1;
+  transform: translate(-2px, 2px);
+  /* Visual centering adjustment */
+}
+
+.rouletteSegment {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  top: 5px;
+  left: 50%;
+  transform-origin: 50% 95px;
+}
+
+.roulettePointer {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: var(--accent-coral);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  z-index: 1;
+}
+
+.spinButton {
+  padding: var(--space-4) var(--space-10);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-inverse);
+  background: var(--bg-gradient);
+  border: none;
+  border-radius: var(--radius-full);
   cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+.spinButton:hover:not(.disabled) {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: var(--shadow-xl), 0 0 50px rgba(90, 115, 245, 0.4);
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.spinButton:active:not(.disabled) {
+  transform: translateY(0);
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+.spinButton.disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Result Section */
+.resultSection {
+  margin-bottom: var(--space-12);
+  animation: slideUp 0.5s ease-out;
+}
+
+.resultCard {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: var(--space-8);
+  background: var(--bg-primary);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-xl);
+  text-align: center;
+  border: 2px solid var(--primary-100);
+}
+
+.resultBadge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-4);
+  background: var(--primary-100);
+  color: var(--primary-700);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+}
+
+.resultName {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.resultProvince {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.resultSlogan {
+  font-size: var(--font-size-lg);
+  color: var(--primary-600);
+  font-style: italic;
+  margin-bottom: var(--space-6);
+}
+
+.resultHighlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.highlightTag {
+  padding: var(--space-2) var(--space-3);
+  background: var(--gray-100);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius-full);
+}
+
+.startButton {
+  width: 100%;
+  padding: var(--space-4);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-inverse);
+  background: var(--bg-gradient);
+  border: none;
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
+}
+
+.startButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Popular Section */
+.popularSection {
+  margin-bottom: var(--space-12);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+  text-align: center;
+}
+
+.regionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-6);
+}
+
+.regionCard {
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: 1px solid var(--gray-200);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.regionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-300);
+  background: linear-gradient(to bottom right, var(--bg-primary), var(--primary-50));
+}
+
+.regionCardContent {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1;
+}
+
+.regionCardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+
+.regionCardProvince {
+  font-size: var(--font-size-xs);
+  color: var(--primary-600);
+  font-weight: var(--font-weight-medium);
+  background: var(--primary-50);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.regionCardName {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.regionCardSlogan {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2box;
+  /* Adding standard property to be safe, though support varies, usually line-clamp: 2 is enough but parser might want it */
+  /* Converting to standard line-clamp if linter insists, but usually webkit is enough. Let's just add line-clamp: 2 */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: keep-all;
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-6);
+  text-align: center;
+  background: var(--gray-50);
+  border-top: 1px solid var(--gray-200);
+}
+
+.footer p {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--space-12) var(--space-4);
   }
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+  .titleHighlight {
+    font-size: var(--font-size-4xl);
+  }
+
+  .roulette {
+    width: 160px;
+    height: 160px;
+  }
+
+  .rouletteInner {
+    width: 100px;
+    height: 100px;
+  }
+
+  .rouletteIcon {
+    font-size: 36px;
+  }
+
+  .rouletteSegment {
+    transform-origin: 50% 75px;
+  }
+
+  .regionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .regionCardImage {
+    height: 120px;
   }
 }
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
-
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+@media (max-width: 480px) {
+  .regionsGrid {
+    grid-template-columns: 1fr;
   }
 }

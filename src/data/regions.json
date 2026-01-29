@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "name": "강릉시",
+    "province": "강원도",
+    "slogan": "커피와 바다의 도시",
+    "lat": 37.7519,
+    "lng": 128.8761,
+    "thumbnail": "/images/regions/gangneung.jpg",
+    "highlights": ["경포대", "안목해변", "오죽헌"]
+  },
+  {
+    "id": 2,
+    "name": "속초시",
+    "province": "강원도",
+    "slogan": "설악산과 동해가 만나는 곳",
+    "lat": 38.2070,
+    "lng": 128.5918,
+    "thumbnail": "/images/regions/sokcho.jpg",
+    "highlights": ["설악산", "속초해변", "아바이마을"]
+  },
+  {
+    "id": 3,
+    "name": "춘천시",
+    "province": "강원도",
+    "slogan": "호수와 닭갈비의 도시",
+    "lat": 37.8813,
+    "lng": 127.7298,
+    "thumbnail": "/images/regions/chuncheon.jpg",
+    "highlights": ["남이섬", "소양강", "닭갈비골목"]
+  },
+  {
+    "id": 4,
+    "name": "평창군",
+    "province": "강원도",
+    "slogan": "동계올림픽의 도시",
+    "lat": 37.3705,
+    "lng": 128.3906,
+    "thumbnail": "/images/regions/pyeongchang.jpg",
+    "highlights": ["대관령", "월정사", "알펜시아"]
+  },
+  {
+    "id": 5,
+    "name": "경주시",
+    "province": "경상북도",
+    "slogan": "천년 고도의 역사 여행",
+    "lat": 35.8562,
+    "lng": 129.2248,
+    "thumbnail": "/images/regions/gyeongju.jpg",
+    "highlights": ["불국사", "첨성대", "동궁과월지"]
+  },
+  {
+    "id": 6,
+    "name": "안동시",
+    "province": "경상북도",
+    "slogan": "한국 정신문화의 수도",
+    "lat": 36.5684,
+    "lng": 128.7295,
+    "thumbnail": "/images/regions/andong.jpg",
+    "highlights": ["하회마을", "도산서원", "안동찜닭"]
+  },
+  {
+    "id": 7,
+    "name": "포항시",
+    "province": "경상북도",
+    "slogan": "해돋이와 철강의 도시",
+    "lat": 36.0190,
+    "lng": 129.3435,
+    "thumbnail": "/images/regions/pohang.jpg",
+    "highlights": ["호미곶", "구룡포", "죽도시장"]
+  },
+  {
+    "id": 8,
+    "name": "울릉군",
+    "province": "경상북도",
+    "slogan": "신비의 섬, 청정 자연",
+    "lat": 37.4841,
+    "lng": 130.9057,
+    "thumbnail": "/images/regions/ulleung.jpg",
+    "highlights": ["독도", "성인봉", "나리분지"]
+  },
+  {
+    "id": 9,
+    "name": "통영시",
+    "province": "경상남도",
+    "slogan": "한국의 나폴리",
+    "lat": 34.8544,
+    "lng": 128.4330,
+    "thumbnail": "/images/regions/tongyeong.jpg",
+    "highlights": ["미륵산", "동피랑", "한려해상"]
+  },
+  {
+    "id": 10,
+    "name": "거제시",
+    "province": "경상남도",
+    "slogan": "남해안의 보석",
+    "lat": 34.8806,
+    "lng": 128.6211,
+    "thumbnail": "/images/regions/geoje.jpg",
+    "highlights": ["외도보타니아", "바람의언덕", "해금강"]
+  },
+  {
+    "id": 11,
+    "name": "남해군",
+    "province": "경상남도",
+    "slogan": "아름다운 섬, 보물섬",
+    "lat": 34.8374,
+    "lng": 127.8924,
+    "thumbnail": "/images/regions/namhae.jpg",
+    "highlights": ["독일마을", "다랭이마을", "상주해수욕장"]
+  },
+  {
+    "id": 12,
+    "name": "전주시",
+    "province": "전라북도",
+    "slogan": "맛과 멋의 도시",
+    "lat": 35.8242,
+    "lng": 127.1480,
+    "thumbnail": "/images/regions/jeonju.jpg",
+    "highlights": ["한옥마을", "전주비빔밥", "경기전"]
+  },
+  {
+    "id": 13,
+    "name": "군산시",
+    "province": "전라북도",
+    "slogan": "시간여행의 도시",
+    "lat": 35.9676,
+    "lng": 126.7368,
+    "thumbnail": "/images/regions/gunsan.jpg",
+    "highlights": ["경암동철길마을", "근대역사박물관", "선유도"]
+  },
+  {
+    "id": 14,
+    "name": "순천시",
+    "province": "전라남도",
+    "slogan": "생태수도, 정원의 도시",
+    "lat": 34.9506,
+    "lng": 127.4872,
+    "thumbnail": "/images/regions/suncheon.jpg",
+    "highlights": ["순천만습지", "순천만국가정원", "낙안읍성"]
+  },
+  {
+    "id": 15,
+    "name": "여수시",
+    "province": "전라남도",
+    "slogan": "밤바다가 아름다운 도시",
+    "lat": 34.7604,
+    "lng": 127.6622,
+    "thumbnail": "/images/regions/yeosu.jpg",
+    "highlights": ["오동도", "해상케이블카", "여수밤바다"]
+  },
+  {
+    "id": 16,
+    "name": "목포시",
+    "province": "전라남도",
+    "slogan": "해양문화 관광도시",
+    "lat": 34.8118,
+    "lng": 126.3922,
+    "thumbnail": "/images/regions/mokpo.jpg",
+    "highlights": ["유달산", "목포해상케이블카", "근대역사관"]
+  },
+  {
+    "id": 17,
+    "name": "담양군",
+    "province": "전라남도",
+    "slogan": "대나무의 고장",
+    "lat": 35.3214,
+    "lng": 126.9886,
+    "thumbnail": "/images/regions/damyang.jpg",
+    "highlights": ["죽녹원", "메타세쿼이아길", "소쇄원"]
+  },
+  {
+    "id": 18,
+    "name": "완도군",
+    "province": "전라남도",
+    "slogan": "청정 해양의 섬",
+    "lat": 34.3110,
+    "lng": 126.7554,
+    "thumbnail": "/images/regions/wando.jpg",
+    "highlights": ["청산도", "완도수목원", "해조류센터"]
+  },
+  {
+    "id": 19,
+    "name": "제주시",
+    "province": "제주특별자치도",
+    "slogan": "신비의 섬, 제주",
+    "lat": 33.4996,
+    "lng": 126.5312,
+    "thumbnail": "/images/regions/jeju.jpg",
+    "highlights": ["한라산", "성산일출봉", "만장굴"]
+  },
+  {
+    "id": 20,
+    "name": "서귀포시",
+    "province": "제주특별자치도",
+    "slogan": "폭포와 바다의 도시",
+    "lat": 33.2541,
+    "lng": 126.5600,
+    "thumbnail": "/images/regions/seogwipo.jpg",
+    "highlights": ["천지연폭포", "중문관광단지", "올레길7코스"]
+  },
+  {
+    "id": 21,
+    "name": "인천시",
+    "province": "인천광역시",
+    "slogan": "바다와 역사의 도시",
+    "lat": 37.4563,
+    "lng": 126.7052,
+    "thumbnail": "/images/regions/incheon.jpg",
+    "highlights": ["차이나타운", "월미도", "송도"]
+  },
+  {
+    "id": 22,
+    "name": "부산시",
+    "province": "부산광역시",
+    "slogan": "대한민국 대표 해양도시",
+    "lat": 35.1796,
+    "lng": 129.0756,
+    "thumbnail": "/images/regions/busan.jpg",
+    "highlights": ["해운대", "광안리", "감천문화마을"]
+  },
+  {
+    "id": 23,
+    "name": "대구시",
+    "province": "대구광역시",
+    "slogan": "패션과 의료의 도시",
+    "lat": 35.8714,
+    "lng": 128.6014,
+    "thumbnail": "/images/regions/daegu.jpg",
+    "highlights": ["팔공산", "서문시장", "김광석거리"]
+  },
+  {
+    "id": 24,
+    "name": "광주시",
+    "province": "광주광역시",
+    "slogan": "예술과 민주의 도시",
+    "lat": 35.1595,
+    "lng": 126.8526,
+    "thumbnail": "/images/regions/gwangju.jpg",
+    "highlights": ["국립아시아문화전당", "무등산", "양림동"]
+  },
+  {
+    "id": 25,
+    "name": "대전시",
+    "province": "대전광역시",
+    "slogan": "과학과 인재의 도시",
+    "lat": 36.3504,
+    "lng": 127.3845,
+    "thumbnail": "/images/regions/daejeon.jpg",
+    "highlights": ["성심당", "유성온천", "엑스포과학공원"]
+  },
+  {
+    "id": 26,
+    "name": "울산시",
+    "province": "울산광역시",
+    "slogan": "고래와 산업의 도시",
+    "lat": 35.5384,
+    "lng": 129.3114,
+    "thumbnail": "/images/regions/ulsan.jpg",
+    "highlights": ["대왕암", "장생포", "태화강"]
+  },
+  {
+    "id": 27,
+    "name": "수원시",
+    "province": "경기도",
+    "slogan": "화성이 있는 역사도시",
+    "lat": 37.2636,
+    "lng": 127.0286,
+    "thumbnail": "/images/regions/suwon.jpg",
+    "highlights": ["수원화성", "행궁동", "화성행궁"]
+  },
+  {
+    "id": 28,
+    "name": "가평군",
+    "province": "경기도",
+    "slogan": "북한강의 아름다운 휴양지",
+    "lat": 37.8315,
+    "lng": 127.5095,
+    "thumbnail": "/images/regions/gapyeong.jpg",
+    "highlights": ["남이섬", "쁘띠프랑스", "아침고요수목원"]
+  },
+  {
+    "id": 29,
+    "name": "양평군",
+    "province": "경기도",
+    "slogan": "생태와 휴양의 고장",
+    "lat": 37.4917,
+    "lng": 127.4877,
+    "thumbnail": "/images/regions/yangpyeong.jpg",
+    "highlights": ["두물머리", "세미원", "용문사"]
+  },
+  {
+    "id": 30,
+    "name": "파주시",
+    "province": "경기도",
+    "slogan": "평화와 문화의 도시",
+    "lat": 37.7597,
+    "lng": 126.7808,
+    "thumbnail": "/images/regions/paju.jpg",
+    "highlights": ["헤이리마을", "파주출판도시", "임진각"]
+  },
+  {
+    "id": 31,
+    "name": "공주시",
+    "province": "충청남도",
+    "slogan": "백제의 두 번째 수도",
+    "lat": 36.4465,
+    "lng": 127.1194,
+    "thumbnail": "/images/regions/gongju.jpg",
+    "highlights": ["공산성", "무령왕릉", "마곡사"]
+  },
+  {
+    "id": 32,
+    "name": "부여군",
+    "province": "충청남도",
+    "slogan": "백제의 마지막 수도",
+    "lat": 36.2756,
+    "lng": 126.9097,
+    "thumbnail": "/images/regions/buyeo.jpg",
+    "highlights": ["낙화암", "정림사지", "궁남지"]
+  },
+  {
+    "id": 33,
+    "name": "태안군",
+    "province": "충청남도",
+    "slogan": "서해안의 보석",
+    "lat": 36.7457,
+    "lng": 126.2980,
+    "thumbnail": "/images/regions/taean.jpg",
+    "highlights": ["안면도", "만리포해수욕장", "꽃지해변"]
+  },
+  {
+    "id": 34,
+    "name": "보령시",
+    "province": "충청남도",
+    "slogan": "머드축제의 도시",
+    "lat": 36.3334,
+    "lng": 126.6129,
+    "thumbnail": "/images/regions/boryeong.jpg",
+    "highlights": ["대천해수욕장", "머드축제", "성주산자연휴양림"]
+  },
+  {
+    "id": 35,
+    "name": "단양군",
+    "province": "충청북도",
+    "slogan": "절경과 온달의 고장",
+    "lat": 36.9845,
+    "lng": 128.3654,
+    "thumbnail": "/images/regions/danyang.jpg",
+    "highlights": ["도담삼봉", "고수동굴", "수양개전망대"]
+  },
+  {
+    "id": 36,
+    "name": "제천시",
+    "province": "충청북도",
+    "slogan": "호수와 산이 있는 치유의 도시",
+    "lat": 37.1326,
+    "lng": 128.1911,
+    "thumbnail": "/images/regions/jecheon.jpg",
+    "highlights": ["청풍호", "의림지", "월악산"]
+  },
+  {
+    "id": 37,
+    "name": "영월군",
+    "province": "강원도",
+    "slogan": "별과 동강이 흐르는 곳",
+    "lat": 37.1838,
+    "lng": 128.4617,
+    "thumbnail": "/images/regions/yeongwol.jpg",
+    "highlights": ["동강", "청령포", "고씨동굴"]
+  },
+  {
+    "id": 38,
+    "name": "정선군",
+    "province": "강원도",
+    "slogan": "아리랑과 레일바이크의 고장",
+    "lat": 37.3807,
+    "lng": 128.6608,
+    "thumbnail": "/images/regions/jeongseon.jpg",
+    "highlights": ["정선5일장", "레일바이크", "화암동굴"]
+  },
+  {
+    "id": 39,
+    "name": "삼척시",
+    "province": "강원도",
+    "slogan": "동굴과 해안의 도시",
+    "lat": 37.4498,
+    "lng": 129.1650,
+    "thumbnail": "/images/regions/samcheok.jpg",
+    "highlights": ["환선굴", "해신당공원", "장호항"]
+  },
+  {
+    "id": 40,
+    "name": "인제군",
+    "province": "강원도",
+    "slogan": "자연 그대로의 청정 고장",
+    "lat": 38.0692,
+    "lng": 128.1706,
+    "thumbnail": "/images/regions/inje.jpg",
+    "highlights": ["내린천", "원대리자작나무숲", "백담사"]
+  },
+  {
+    "id": 41,
+    "name": "홍천군",
+    "province": "강원도",
+    "slogan": "은행나무숲의 고장",
+    "lat": 37.6970,
+    "lng": 127.8886,
+    "thumbnail": "/images/regions/hongcheon.jpg",
+    "highlights": ["은행나무숲", "수타사", "홍천강"]
+  },
+  {
+    "id": 42,
+    "name": "원주시",
+    "province": "강원도",
+    "slogan": "뮤지엄 시티",
+    "lat": 37.3421,
+    "lng": 127.9198,
+    "thumbnail": "/images/regions/wonju.jpg",
+    "highlights": ["뮤지엄산", "소금산출렁다리", "치악산"]
+  },
+  {
+    "id": 43,
+    "name": "동해시",
+    "province": "강원도",
+    "slogan": "묵호항의 푸른 바다",
+    "lat": 37.5247,
+    "lng": 129.1142,
+    "thumbnail": "/images/regions/donghae.jpg",
+    "highlights": ["묵호등대", "천곡동굴", "추암촛대바위"]
+  },
+  {
+    "id": 44,
+    "name": "양양군",
+    "province": "강원도",
+    "slogan": "서핑과 일출의 명소",
+    "lat": 38.0754,
+    "lng": 128.6189,
+    "thumbnail": "/images/regions/yangyang.jpg",
+    "highlights": ["낙산사", "서피비치", "하조대"]
+  },
+  {
+    "id": 45,
+    "name": "고성군",
+    "province": "강원도",
+    "slogan": "DMZ와 동해의 만남",
+    "lat": 38.3803,
+    "lng": 128.4679,
+    "thumbnail": "/images/regions/goseong.jpg",
+    "highlights": ["통일전망대", "화진포", "건봉사"]
+  },
+  {
+    "id": 46,
+    "name": "철원군",
+    "province": "강원도",
+    "slogan": "평화와 생태의 땅",
+    "lat": 38.1468,
+    "lng": 127.3132,
+    "thumbnail": "/images/regions/cheorwon.jpg",
+    "highlights": ["한탄강", "고석정", "노동당사"]
+  },
+  {
+    "id": 47,
+    "name": "청송군",
+    "province": "경상북도",
+    "slogan": "유네스코 세계지질공원",
+    "lat": 36.4364,
+    "lng": 129.0571,
+    "thumbnail": "/images/regions/cheongsong.jpg",
+    "highlights": ["주산지", "얼음골", "사과"]
+  },
+  {
+    "id": 48,
+    "name": "영덕군",
+    "province": "경상북도",
+    "slogan": "대게의 고장",
+    "lat": 36.4150,
+    "lng": 129.3660,
+    "thumbnail": "/images/regions/yeongdeok.jpg",
+    "highlights": ["강구항", "삼사해상공원", "대게"]
+  },
+  {
+    "id": 49,
+    "name": "문경시",
+    "province": "경상북도",
+    "slogan": "옛길과 도자기의 고장",
+    "lat": 36.5869,
+    "lng": 128.1868,
+    "thumbnail": "/images/regions/mungyeong.jpg",
+    "highlights": ["문경새재", "도자기축제", "레일바이크"]
+  },
+  {
+    "id": 50,
+    "name": "영주시",
+    "province": "경상북도",
+    "slogan": "선비의 고장",
+    "lat": 36.8057,
+    "lng": 128.6240,
+    "thumbnail": "/images/regions/yeongju.jpg",
+    "highlights": ["부석사", "소수서원", "무섬마을"]
+  },
+  {
+    "id": 51,
+    "name": "창녕군",
+    "province": "경상남도",
+    "slogan": "우포늪의 생태도시",
+    "lat": 35.5429,
+    "lng": 128.4915,
+    "thumbnail": "/images/regions/changnyeong.jpg",
+    "highlights": ["우포늪", "화왕산", "창녕양"]
+  },
+  {
+    "id": 52,
+    "name": "하동군",
+    "province": "경상남도",
+    "slogan": "녹차와 섬진강의 고장",
+    "lat": 35.0669,
+    "lng": 127.7514,
+    "thumbnail": "/images/regions/hadong.jpg",
+    "highlights": ["화개장터", "쌍계사", "악양"]
+  },
+  {
+    "id": 53,
+    "name": "합천군",
+    "province": "경상남도",
+    "slogan": "해인사와 팔만대장경",
+    "lat": 35.5666,
+    "lng": 128.1658,
+    "thumbnail": "/images/regions/hapcheon.jpg",
+    "highlights": ["해인사", "가야산", "합천영상테마파크"]
+  },
+  {
+    "id": 54,
+    "name": "산청군",
+    "province": "경상남도",
+    "slogan": "한방과 힐링의 고장",
+    "lat": 35.4157,
+    "lng": 127.8734,
+    "thumbnail": "/images/regions/sancheong.jpg",
+    "highlights": ["지리산", "한방테마파크", "경호강"]
+  },
+  {
+    "id": 55,
+    "name": "진도군",
+    "province": "전라남도",
+    "slogan": "신비의 바닷길",
+    "lat": 34.4869,
+    "lng": 126.2632,
+    "thumbnail": "/images/regions/jindo.jpg",
+    "highlights": ["신비의바닷길", "진도개", "운림산방"]
+  },
+  {
+    "id": 56,
+    "name": "강진군",
+    "province": "전라남도",
+    "slogan": "청자와 다산의 고장",
+    "lat": 34.6421,
+    "lng": 126.7672,
+    "thumbnail": "/images/regions/gangjin.jpg",
+    "highlights": ["청자박물관", "다산초당", "가우도"]
+  },
+  {
+    "id": 57,
+    "name": "보성군",
+    "province": "전라남도",
+    "slogan": "녹차밭의 아름다운 고장",
+    "lat": 34.7716,
+    "lng": 127.0798,
+    "thumbnail": "/images/regions/boseong.jpg",
+    "highlights": ["보성녹차밭", "벌교꼬막", "율포해수욕장"]
+  },
+  {
+    "id": 58,
+    "name": "신안군",
+    "province": "전라남도",
+    "slogan": "1004개 섬의 군",
+    "lat": 34.8269,
+    "lng": 126.1072,
+    "thumbnail": "/images/regions/shinan.jpg",
+    "highlights": ["퍼플섬", "천사대교", "태평염전"]
+  },
+  {
+    "id": 59,
+    "name": "영광군",
+    "province": "전라남도",
+    "slogan": "굴비의 고장",
+    "lat": 35.2772,
+    "lng": 126.5119,
+    "thumbnail": "/images/regions/yeonggwang.jpg",
+    "highlights": ["백수해안도로", "법성포", "칠산바다"]
+  },
+  {
+    "id": 60,
+    "name": "고창군",
+    "province": "전라북도",
+    "slogan": "고인돌과 복분자의 고장",
+    "lat": 35.4358,
+    "lng": 126.7020,
+    "thumbnail": "/images/regions/gochang.jpg",
+    "highlights": ["고창읍성", "고인돌유적", "선운사"]
+  },
+  {
+    "id": 61,
+    "name": "남원시",
+    "province": "전라북도",
+    "slogan": "춘향의 고장",
+    "lat": 35.4165,
+    "lng": 127.3906,
+    "thumbnail": "/images/regions/namwon.jpg",
+    "highlights": ["광한루원", "지리산", "추어탕"]
+  },
+  {
+    "id": 62,
+    "name": "무주군",
+    "province": "전라북도",
+    "slogan": "반딧불과 스키의 고장",
+    "lat": 36.0068,
+    "lng": 127.6609,
+    "thumbnail": "/images/regions/muju.jpg",
+    "highlights": ["무주리조트", "덕유산", "반딧불축제"]
+  },
+  {
+    "id": 63,
+    "name": "임실군",
+    "province": "전라북도",
+    "slogan": "치즈의 고장",
+    "lat": 35.6178,
+    "lng": 127.2890,
+    "thumbnail": "/images/regions/imsil.jpg",
+    "highlights": ["치즈테마파크", "옥정호", "사선대"]
+  },
+  {
+    "id": 64,
+    "name": "진안군",
+    "province": "전라북도",
+    "slogan": "마이산과 고원의 고장",
+    "lat": 35.7917,
+    "lng": 127.4245,
+    "thumbnail": "/images/regions/jinan.jpg",
+    "highlights": ["마이산", "홍삼", "운장산"]
+  },
+  {
+    "id": 65,
+    "name": "익산시",
+    "province": "전라북도",
+    "slogan": "백제의 왕도",
+    "lat": 35.9483,
+    "lng": 126.9577,
+    "thumbnail": "/images/regions/iksan.jpg",
+    "highlights": ["미륵사지", "왕궁리유적", "보석박물관"]
+  },
+  {
+    "id": 66,
+    "name": "서천군",
+    "province": "충청남도",
+    "slogan": "갯벌과 생태의 고장",
+    "lat": 36.0804,
+    "lng": 126.6918,
+    "thumbnail": "/images/regions/seocheon.jpg",
+    "highlights": ["국립생태원", "신성리갈대밭", "춘장대해수욕장"]
+  },
+  {
+    "id": 67,
+    "name": "예산군",
+    "province": "충청남도",
+    "slogan": "사과와 추사의 고장",
+    "lat": 36.6826,
+    "lng": 126.8515,
+    "thumbnail": "/images/regions/yesan.jpg",
+    "highlights": ["수덕사", "추사고택", "예당저수지"]
+  },
+  {
+    "id": 68,
+    "name": "청양군",
+    "province": "충청남도",
+    "slogan": "고추와 칠갑산의 고장",
+    "lat": 36.4592,
+    "lng": 126.8021,
+    "thumbnail": "/images/regions/cheongyang.jpg",
+    "highlights": ["칠갑산", "천장호출렁다리", "알프스마을"]
+  },
+  {
+    "id": 69,
+    "name": "옥천군",
+    "province": "충청북도",
+    "slogan": "정지용 시인의 고향",
+    "lat": 36.3065,
+    "lng": 127.5710,
+    "thumbnail": "/images/regions/okcheon.jpg",
+    "highlights": ["정지용문학관", "대청호", "금강모치"]
+  },
+  {
+    "id": 70,
+    "name": "보은군",
+    "province": "충청북도",
+    "slogan": "속리산과 법주사의 고장",
+    "lat": 36.4893,
+    "lng": 127.7296,
+    "thumbnail": "/images/regions/boeun.jpg",
+    "highlights": ["속리산", "법주사", "대추"]
+  }
+]
